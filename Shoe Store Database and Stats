@@ -1,0 +1,9 @@
+CREATE TABLE shoe_store (id INTEGER PRIMARY KEY, style TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+INSERT INTO shoe_store VALUES (1, "running shoes", 80, 4, 1);
+INSERT INTO shoe_store VALUES (2, "athletic shoes", 45, 8, 2);
+INSERT INTO shoe_store VALUES (3, "kids shoes", 25, 30, 6);
+INSERT INTO shoe_store VALUES (4, "sandals", 30, 10, 5);
+INSERT INTO shoe_store VALUES (5, "dress shoes", 65, 11, 8);
+
+SELECT * FROM shoe_store ORDER BY price;
+SELECT SUM(quantity) FROM shoe_store;
